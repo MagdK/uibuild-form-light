@@ -106,6 +106,7 @@ p {
     top: 0;
     left: 40px;
     font-size: 16px;
+    line-height: 20px;
     color: #467745;
     text-align: left;
 }
