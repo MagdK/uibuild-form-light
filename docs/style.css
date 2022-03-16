@@ -110,6 +110,10 @@ p {
     text-align: left;
 }
 
+p span {
+    text-decoration: underline;
+}
+
 button {
     width: 280px;
     height: 80px;
