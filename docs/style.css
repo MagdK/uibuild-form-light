@@ -26,7 +26,8 @@
   
   button,
   textarea,
-  select {
+  select,
+  input {
     appearance: none !important;
     border-radius: 0;
 }
@@ -36,59 +37,83 @@
 body {
     background-color: #F7E4D4;   
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 section {
     margin: 0 auto;
     text-align: center;
+    margin-top: 130px;
 }
 
 h1 {
     color: #467745;
     font-weight: 400;
     font-family: 'EB Garamond', serif;
+    margin-bottom: 20px;
+}
+
+h1,
+input, 
+textarea,
+article {
+    font-size: 16px;
+    margin: 0 20px 25px 20px;
 }
 
 input {
     height: 64px;
     background-color: #fff;
-    margin: 0 20px 20px 20px;
 }
 
 textarea {
-    height: 64px;
+    height: 120px;
     background-color: #fff;
-    margin: 0 20px 20px 20px;
+    padding-top: 20px;
 }
 
 ::placeholder {
     font-size: 16px;
     font-weight: 500;
-    color: #98A991;
+    color: #9BB096;
     letter-spacing: 1.2px;
     padding-left: 20px;
 }
 
+article {
+    position: relative;
+}
+
 #checkbox {
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    margin: 0;
 }
 
 p {
-    display: inline-block;
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 40px;
+    font-size: 16px;
+    color: #467745;
+    text-align: left;
 }
 
 button {
-    bottom: 20px;
-    right: 20px;
     width: 280px;
     height: 80px;
-    border-radius: 60px;
+    border-radius: 40px;
     background-color: #467745;
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     color: #F7E4D4;
     font-family: 'EB Garamond', serif;
+    margin-top: 40px;
 }
 
 @media only screen and (min-width: 520px) {
@@ -98,12 +123,10 @@ button {
     }
     section {
         max-width: 520px;
-        margin-top: 130px;
     }
-    section div p {
-        padding: 20px;
-    }
-    input {
+    input,
+    textarea,
+    article {
         width: 480px;
     }
 }
@@ -116,10 +139,9 @@ button {
     section {
         width: 100%;
     }
-    section div p {
-        padding: 20px 20px 16px 20px;
-    }
-    input {
+    input,
+    textarea,
+    article {
         width: calc(100% - 40px);
     }
 }
