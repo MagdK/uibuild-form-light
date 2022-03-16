@@ -126,6 +126,8 @@ button {
     color: #F7E4D4;
     font-family: 'EB Garamond', serif;
     margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
 }
 
 @media only screen and (min-width: 520px) {
