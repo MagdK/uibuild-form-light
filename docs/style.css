@@ -47,9 +47,9 @@ section {
 }
 
 h1 {
-    color: #467745;
     font-weight: 400;
     font-family: 'EB Garamond', serif;
+    color: #467745;
     margin-bottom: 20px;
 }
 
@@ -72,12 +72,19 @@ textarea {
     padding-top: 20px;
 }
 
+textarea,
+input,
+textarea:focus, 
+input:focus {
+    color: #467745;
+    letter-spacing: 1.2px;
+    padding-left: 20px;
+}
+
 ::placeholder {
     font-size: 16px;
     font-weight: 500;
     color: #9BB096;
-    letter-spacing: 1.2px;
-    padding-left: 20px;
 }
 
 article {
